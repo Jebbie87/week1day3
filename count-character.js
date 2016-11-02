@@ -3,16 +3,6 @@ function lettersLetters (str) {
   var noSpaces = str.split(" ").join("").toLowerCase();
   var letters = {};
 
-   /*for (var i = 0; i < noSpaces.length; i++) {
-      if (letters.hasOwnProperty(noSpaces[i])) {
-        letters[noSpaces[i]]++;
-      } else {
-        letters[noSpaces[i]] = 1
-      }
-  }*/
-
-  for ()
-
   for (var i = 0; i < noSpaces.length; i++){
     if (letters.hasOwnProperty(noSpaces[i])) {
         letters[noSpaces[i]].push(i);
@@ -20,8 +10,6 @@ function lettersLetters (str) {
         letters[noSpaces[i]] = [i]
       }
   }
-
-  letters.
 
   return letters;
 }
