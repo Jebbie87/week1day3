@@ -1,4 +1,3 @@
-// lighthouse in the house
 var word = "lighthouse in the house";
 function lettersLetters (str) {
   var noSpaces = str.split(" ").join("").toLowerCase();
