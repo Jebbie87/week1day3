@@ -1,16 +1,16 @@
 var word = "lighthouse in the house";
 function lettersLetters (str) {
-  var noSpaces = str.split(" ").join("").toLowerCase();
+  var noSpaces = str.split(" ").join("").toLowerCase().split("");
   var letters = {};
 
-  for (var i = 0; i < noSpaces.length; i++){
-    if (letters.hasOwnProperty(noSpaces[i])) {
-        letters[noSpaces[i]].push(i);
-      } else {
-        letters[noSpaces[i]] = [i]
-      }
-  }
-
+  noSpaces.forEach(function(character, i){
+    if (letters.hasOwnProperty(character)){
+      letters[character].push(i)
+    } else {
+      letters[character] = [i]
+    }
+  })
+}
   return letters;
 }
 
