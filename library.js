@@ -142,7 +142,7 @@ var addPlaylist = function (name) {
 // console.log(printAllTracks(library))
 // console.log(printPlaylist('p02'))
 // console.log(addTrackToPlaylist("t04", "p01"))
-// addTrack("name04", "artist04", "album04")
+addTrack("name04", "artist04", "album04")
 // console.log(library)
 addPlaylist("p03")
 console.log(library)
